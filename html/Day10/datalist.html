@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="Cars">Select cars: </label>
+      <input type="text" list="cars" name="cars" />
+      <datalist id="cars">
+        <optgroup label="mycars">
+          <option value="Fortuner"></option>
+          <option value="Nano"></option>
+          <option value="Tata Punch EV"></option>
+          <option value="Swift Dzire"></option>
+        </optgroup>
+      </datalist>
+
+      <br /><br />
+      <label for="cars">Select cars</label>
+      <select name="myCars" id="cars">
+        <optgroup label="German Cars">
+          <option value="BMW">BMW</option>
+          <option value="Dodge">Dodge Challenger Hellcat</option>
+          <option value="Skoda">Skoda</option>
+        </optgroup>
+        <optgroup label="Indian Cars">
+          <option value="BMW">Nano</option>
+          <option value="Dodge">Swift</option>
+          <option value="Skoda">Fortuner</option>
+        </optgroup>
+        <optgroup label="Japanese Cars">
+          <option value="BMW">BMW</option>
+          <option value="Dodge">Dodge Challenger Hellcat</option>
+          <option value="Skoda">Skoda</option>
+        </optgroup>
+      </select>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

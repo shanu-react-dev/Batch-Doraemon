@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mainBox {
+  height: 100vh;
+  background-color: yellow;
+  display: flex;
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* align-items: end; */
+  /* gap: 100px; */
+  align-items: center;
+  justify-content: center;
+}
+
+.firstBox {
+  height: 200px;
+  width: 200px;
+  border: 2px solid blue;
+}
+.secondBox {
+  height: 200px;
+  width: 200px;
+  /* position: absolute;
+  top: 0;
+  left: 200px; */
+  border: 2px solid blue;
+}
+
+.thirdBox {
+  height: 200px;
+  width: 200px;
+  /* position: absolute;
+  left: 400px;
+  top: 0; */
+  border: 2px solid blue;
+}
+
+.fourthBox {
+  height: 200px;
+  width: 200px;
+  /* position: absolute;
+  left: 600px;
+  top: 0; */
+  border: 2px solid blue;
+}

@@ -1,0 +1,15 @@
+h1 {
+  color: coral;
+  /*? RGB stands for Red Green and Blue it is a function which accept three values between 0-255. First magnitude represents Red color second green and third is blue. If we are using more than 255 it will take the peak value as 255 only. We can use percentage value also. */
+  color: rgb(100%, 20%, 40%);
+  /*? RGBA is similar to RGB but it accepts extra property that is alpha which shows the opacity of the color.  */
+  color: rgb(4, 179, 173);
+}
+
+p {
+  color: rgba(255, 210, 110, 0.9);
+  color: #929;
+  color: #9295;
+  color: #538eca9a;
+  color: hsl(40, 100%, 50%);
+}

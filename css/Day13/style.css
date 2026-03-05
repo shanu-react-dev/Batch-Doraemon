@@ -1,0 +1,117 @@
+/* a {
+  color: red;
+}
+
+[type] {
+  color: aquamarine;
+}
+
+[type="text"] {
+  color: yellow;
+}
+
+[href] {
+  color: green;
+}
+
+[href="https://www.google.com"] {
+  color: blue;
+}
+
+[href="https://www.netflix.com"] {
+  color: red;
+}
+
+[href="https://www.w3schools.com"] {
+  color: blueviolet;
+} */
+
+/*! Attribute includes letter selector */
+/* [href*="e"] {
+  color: cadetblue;
+}
+
+[href*="3"] {
+  color: crimson;
+} */
+/*! Attribute starting letter selector  */
+/* [type^="S"] {
+  color: lightseagreen;
+} */
+
+/*! Pseudo Class Selector  */
+[type="submit"] {
+  background-color: yellow;
+}
+
+[type="submit"]:hover {
+  background-color: red;
+}
+
+input[type="text"]:active {
+  background-color: lightpink;
+}
+
+input[type="text"]:focus {
+  background-color: coral;
+}
+
+a {
+  color: blueviolet;
+}
+
+a:active {
+  color: green;
+}
+
+a:visited {
+  color: coral;
+}
+
+li:first-child {
+  color: yellow;
+}
+
+li:last-child {
+  color: pink;
+}
+
+li:nth-child(8) {
+  color: aquamarine;
+}
+
+li:nth-child(even) {
+  color: cornflowerblue;
+}
+
+li:nth-child(odd) {
+  color: crimson;
+}
+
+/* Pseudo Element Selector */
+p {
+  color: yellow;
+}
+p::first-line {
+  color: blueviolet;
+}
+p::first-letter {
+  color: coral;
+}
+
+p::selection {
+  color: red;
+  background-color: black;
+}
+
+#fav::after {
+  content: "😍";
+}
+
+#fav::before {
+  content: "😵";
+}
+
+ol > li::marker {
+  content: "👉🏼";
+}

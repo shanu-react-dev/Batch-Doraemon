@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+header {
+  height: 68px;
+  width: 100%;
+  background-color: lightsalmon;
+  text-align: center;
+  /* font-size: 30px; */
+  font-weight: 600;
+  position: relative;
+}
+
+.mainPage {
+  height: calc(100vh - 68px - 68px);
+  width: 100%;
+  /* position: absolute; */
+  position: relative;
+  background-color: lightgoldenrodyellow;
+}
+
+aside {
+  width: 33%;
+  height: 100%;
+  /* font-size: 50px; */
+  color: #fff;
+  position: relative;
+  background-color: blue;
+}
+
+.content {
+  height: 100%;
+  width: 66%;
+  background-color: cornflowerblue;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* font-size: 50px; */
+  color: darkblue;
+}
+footer {
+  width: 100%;
+  height: 68px;
+  background-color: black;
+  color: #fff;
+  position: relative;
+  /* font-size: 40px; */
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

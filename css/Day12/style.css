@@ -1,0 +1,34 @@
+/* h1 {
+  color: blue;
+} */
+/*!Descendent Selector  */
+/** This selector selects the both direct and indirect child at a time. It can be used with space between the parent and targetted elements.  */
+/* div h1 {
+  color: blue;
+} */
+
+/* ! Child Selector */
+/** It is a combinator selector which targets the direct child elements. It can be used with greater than symbol (>) between parent and targetted elements  */
+/* div > h1 {
+  color: red;
+}
+
+section > p {
+  color: blue;
+} */
+
+/*! Adjacent Sibling Selector  */
+/** This is a combinator selector which selects the nearest sibling elements. It can be used using + symbol between siblings and targetted elements.  */
+/* h1 + h1 {
+  color: blueviolet;
+} */
+
+/*! General Sibling Selector  */
+/** This is a combinator selector used to target the all sibling targetted elements . Here we need to use tilde symbol to target all general sibling elements.  */
+/* h1 ~ h1 {
+  color: blueviolet;
+} */
+
+h1 h1 {
+  color: blueviolet;
+}

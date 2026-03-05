@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  height: 200px;
+  width: 400px;
+  padding: 20px;
+  background-color: yellow;
+}
+
+.firstPara {
+  height: 200px;
+  width: 400px;
+  padding: 60px;
+  /* overflow: visible; */
+  /* overflow: hidden; */
+  overflow: scroll;
+  /* overflow: auto; */
+  box-sizing: border-box;
+  background-color: aquamarine;
+}
+
+.secondPara {
+  height: 200px;
+  width: 400px;
+  background-color: blue;
+}
+
+.thirdPara {
+  height: 200px;
+  width: 400px;
+  background-color: lightpink;
+}

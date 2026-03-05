@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  text-align: right;
+  text-align: start;
+  text-align: end;
+  text-align: left;
+  text-align: justify;
+
+  text-decoration: underline;
+  text-decoration: overline;
+  text-decoration: line-through;
+  text-decoration: underline dashed;
+  text-decoration: underline dotted;
+  text-decoration: underline double;
+  text-decoration: underline wavy 1px yellow;
+
+  text-transform: capitalize;
+}
+
+p {
+  text-align: justify;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  text-transform: none;
+
+  text-shadow: 2px 1px 10px lightseagreen;
+  text-indent: 100px;
+}

@@ -1,0 +1,54 @@
+/* h1 {
+  background-color: yellow;
+  height: 100px;
+  width: 400px;
+  margin: 200px;
+  padding: 20px;
+}
+
+a {
+  background-color: yellowgreen;
+  height: 100px;
+  width: 400px;
+  margin: 400px;
+  padding: 40px;
+}
+*/
+img {
+  height: 200px;
+  width: 200px;
+}
+
+textarea {
+  height: 200px;
+  width: 200px;
+}
+
+.facebook {
+  border: 2px solid red;
+  height: 100px;
+  /* display: block; */
+  display: inline-block;
+
+  /* width: 100px; */
+}
+
+p {
+  border: 2px solid red;
+  height: 100px;
+  width: 100px;
+  /* display: inline; */
+  display: inline-block;
+}
+
+[type="radio"]:focus {
+  background-color: red;
+}
+
+[type="text"]:valid {
+  background-color: yellow;
+}
+
+[type="text"]:invalid {
+  background-color: red;
+}

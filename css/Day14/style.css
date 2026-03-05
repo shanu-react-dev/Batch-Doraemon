@@ -1,0 +1,31 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 20px;
+}
+
+.headingBox {
+  height: 50vh;
+  background-color: lightseagreen;
+}
+h1 {
+  /* font-size: 3em; */
+  font-size: 3rem;
+  background-color: yellow;
+  /* width: 50%;
+  height: 50%; */
+  height: 100px;
+}
+
+.box {
+  height: 200px;
+  width: 500px;
+  background-color: blueviolet;
+}
+
+.box2 {
+  height: 50vh;
+  width: 50vw;
+  background-color: yellow;
+}

@@ -1,0 +1,58 @@
+body {
+  background-color: lightgray;
+}
+
+.box {
+  height: 400px;
+  width: 400px;
+  background-color: aquamarine;
+  background-image: url("https://cdn.pixabay.com/photo/2018/08/06/01/13/dodge-3586740_1280.jpg");
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  background-size: cover;
+  /* background-size: auto; */
+  background-size: 100px;
+  /* background-position: -70px; */
+  /* border-radius: 100%; */
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+}
+
+.grad {
+  height: 500px;
+  width: 500px;
+  border: 2px solid red;
+  /* background-color: aqua, green; */
+  background: linear-gradient(aqua, green, aquamarine);
+  background: linear-gradient(to right, aqua, green, aquamarine);
+  background: linear-gradient(to left, aqua, green, aquamarine);
+  background: linear-gradient(to bottom, aqua, green, aquamarine);
+  background: linear-gradient(to top, aqua, green, aquamarine);
+  background: linear-gradient(to top left, aqua, green, aquamarine);
+  background: linear-gradient(to top right, aqua, green, aquamarine);
+  background: linear-gradient(to bottom right, aqua, green, aquamarine);
+  background: linear-gradient(to bottom left, aqua, green, aquamarine);
+  background: linear-gradient(150deg, aqua, green, aquamarine);
+}
+
+.rad {
+  height: 200px;
+  width: 200px;
+  border: 2px solid salmon;
+  background: radial-gradient(lightsalmon, lightseagreen, lightblue);
+  background: radial-gradient(at top, blue, green, yellow, red);
+  background: radial-gradient(at left, blue, green, yellow, red);
+  background: radial-gradient(at right, blue, green, yellow, red);
+  background: radial-gradient(at bottom, blue, green, yellow, red);
+  background: radial-gradient(
+    at top right,
+    blue 10%,
+    green 30%,
+    yellow 50%,
+    red 100%
+  );
+
+  background: conic-gradient(yellow 50%, red 70%, blue);
+}
