@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: rgb(254, 255, 255);
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: lightsteelblue; */
+  background-image: url("https://i.pinimg.com/736x/bb/3d/02/bb3d027efc8586606821a1c60c10a986.jpg");
+  background-size: cover;
+}
+.parent {
+  height: 400px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border-radius: 40px 0;
+  background-color: rgb(43, 83, 136);
+}
+
+.parent > form {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* background-color: yellow; */
+}
+
+.parent > form > input {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid lightsteelblue;
+  background-color: lightsteelblue;
+}
+
+input {
+  color: rgb(43, 83, 136);
+  font-weight: 600;
+  font-size: 17px;
+}
+[type="submit"] {
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+[type="submit"]:hover {
+  background-color: rgb(43, 83, 136);
+  color: lightsteelblue;
+  transition: all 0.5s;
+  transform: translate(0px, -5px);
+}
