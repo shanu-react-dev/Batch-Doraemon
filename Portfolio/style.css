@@ -66,16 +66,161 @@ ul a:hover {
   /* background-color: lightgreen; */
 }
 
-.btnBox > button {
+.btnBox button {
   padding: 10px 20px;
   background-color: #5e00b7;
+  background: linear-gradient(to left, #ca7bec, #5e00b7);
   color: #fff;
   border: 2px solid #5e00b7;
   transition: all 0.7s;
   border-radius: 20px;
 }
 
-.btnBox > button:hover {
+.btnBox button:hover {
+  /* background-color: transparent; */
+  background: transparent;
+  background: linear-gradient(to left, #5e00b7, #ca7bec);
+
+  color: #fff;
+}
+
+/* Homepage css starts here */
+#home {
+  height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: #ca7bec; */
+}
+
+#home > .details,
+#home > .img {
+  height: 80%;
+  width: 35%;
+  /* background-color: lightseagreen; */
+}
+
+#home > .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.details > span {
+  background-color: #5e00b7;
+  /* display: inline-block; */
+  width: 17%;
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.details > h1 {
+  font-size: 50px;
+}
+
+.details > p {
+  font-size: 17px;
+}
+.details > .hire {
+  display: flex;
+  gap: 10px;
+}
+
+.hire button {
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  transition: 0.7s all;
+  cursor: pointer;
+}
+
+.hire > button {
+  background-color: #5e00b7;
+  color: #fff;
+  border: 2px solid #5e00b7;
+}
+
+.hire > button:hover {
   background-color: transparent;
-  color: black;
+  color: #1a1a1a;
+}
+
+.hire > a > button {
+  background-color: transparent;
+  border: 2px solid #5e00b7;
+  color: #1a1a1a;
+}
+
+.hire > a > button:hover {
+  background-color: #5e00b7;
+  color: #fff;
+}
+
+.details > .icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons > div {
+  height: 45px;
+  width: 45px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 100%;
+  transition: all 1s;
+  border: 2px solid gainsboro;
+}
+
+.icons > div > i {
+  /* padding: 15px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons > div:first-child:hover {
+  background: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+  color: white;
+  border-radius: 100%;
+  box-shadow: 2px 2px 2px #ee2a7b;
+}
+
+.icons > div:nth-child(2):hover {
+  background-color: #0e76a8;
+  color: #fff;
+  box-shadow: 2px 2px 2px #0e76a8;
+}
+
+.icons > div:nth-child(3):hover {
+  background-color: #ca7bec;
+  color: rgb(158, 16, 166);
+  box-shadow: 2px 2px 2px #ca7bec;
+}
+
+.icons > div:last-child:hover {
+  background-color: black;
+  color: #fff;
+  box-shadow: 2px 2px 2px #525252;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img > div {
+  height: 350px;
+  width: 350px;
+  background-color: red;
+  border-radius: 100%;
+  background-image: url("http://sm.mashable.com/mashable_in/photo/default/ks_63ww.png");
+  background-size: cover;
+  background-position: center;
 }
