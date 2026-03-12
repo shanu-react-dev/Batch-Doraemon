@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  border: 2px solid red;
+  animation-name: moveBox;
+  animation-duration: 4s;
+  /* animation-iteration-count: 5; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* animation-timing-function: ease; */
+  /* animation-timing-function: ease-in; */
+  animation-timing-function: ease-in-out;
+  /* animation-timing-function: ease-out; */
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+/* @keyframes moveBox {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    top: 0;
+    left: calc(100% - 200px);
+    background-color: lightseagreen;
+    border-radius: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2026/02/23/08/49/daniil_kondrashin-model-10139199_1280.jpg);
+    background-size: cover;
+  }
+} */
+
+@keyframes moveBox {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 200px);
+  }
+  50% {
+    top: calc(100vh - 200px);
+    left: calc(100% - 200px);
+  }
+  75% {
+    top: calc(100vh - 200px);
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}

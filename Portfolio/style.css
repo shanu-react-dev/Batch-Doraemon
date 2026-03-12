@@ -121,6 +121,11 @@ ul a:hover {
   font-size: 50px;
 }
 
+.details > h1 > #career {
+  color: #5e00b7;
+  text-shadow: 0px 0px 4px red;
+}
+
 .details > p {
   font-size: 17px;
 }

@@ -21,6 +21,13 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <nav>
@@ -54,7 +61,7 @@
         <span>Kumar Sanu</span>
         <h1>
           I'm <br />
-          <span id="career">Software developer</span>
+          <span id="career"></span>
         </h1>
         <p>
           Experienced frontend developer with a passion for creating visually
@@ -79,5 +86,20 @@
         <div></div>
       </section>
     </section>
+
+    <script>
+      var typed2 = new Typed("#career", {
+        strings: [
+          "A Software Developer",
+          "A Graphic Designer",
+          "UI UX Designer",
+          "A MERN Developer",
+        ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        fadeOut: false,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
