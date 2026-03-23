@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* background-color: #c2bbbb; */
+}
+.firstBox {
+  height: 100%;
+  width: 20%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.firstBox > .logo {
+  font-size: 70px;
+  color: blue;
+  padding: 40px;
+}
+
+.firstBox > .title > p {
+  font-size: 50px;
+  font-weight: 700;
+  padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.firstBox > .title > p > span {
+  color: blue;
+}
+
+.secondBox {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: purple; */
+}
+
+.secondBox > img {
+  height: 90%;
+  width: 95%;
+}
+.thirdBox {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blueviolet; */
+}
+
+.thirdBox > form {
+  height: 80%;
+  width: 90%;
+  /* background-color: lightsalmon; */
+}
+
+form > input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+[type="submit"] {
+  border-radius: 25px;
+  border: 2px solid blue;
+  outline: none;
+}
+
+[value*="?"] {
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+[value*="?"]:hover {
+  background-color: rgba(227, 224, 224, 0.167);
+}
+
+[value*="Create"] {
+  background-color: transparent;
+  color: blue;
+  font-size: 17px;
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+[value*="Create"]:hover {
+  background-color: rgba(128, 128, 128, 0.23);
+}
+
+.meta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.meta > svg {
+  margin-top: 20px;
+  height: 14px;
+}
