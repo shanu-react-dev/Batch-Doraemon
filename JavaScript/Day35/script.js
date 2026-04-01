@@ -5,9 +5,9 @@
 
 //! Named Function / Function Declaration / Function Definition
 //? A function which is defined along with the name is known as Named Function. It supports hoisting.
-function greet () {
+function greet() {
     let a = 0
-    while(a <= 10){
+    while (a <= 10) {
         console.log(a)
         a++
     }
@@ -29,7 +29,7 @@ function greet () {
 
 //? The parentheses used while calling the function is known as arguments block by using this block we can send some value to the functions for expected output. Here we can pass any value whether it is primitive or non primitive.
 
-function sumOfTwoVariables (firstValue, secondValue) {
+function sumOfTwoVariables(firstValue, secondValue) {
     console.log("Sum of Two values is: ", firstValue + secondValue)
 }
 
@@ -37,20 +37,20 @@ function sumOfTwoVariables (firstValue, secondValue) {
 // sumOfTwoVariables()// NaN: By default the parameter will have the value as undefined and here we have two parameters in the function we are trying to get sum of two undefined value so it will return NaN.
 // sumOfTwoVariables(10, 100, 20, 200)
 
-function evenOrOdd (a) {
-    if(a % 2 === 0){
+function evenOrOdd(a) {
+    if (a % 2 === 0) {
         console.log("It is an even number")
-    }else{
+    } else {
         console.log("It is an odd number")
     }
 }
 // evenOrOdd(9)
 
-function fullName (firstName, lastName) {
+function fullName(firstName, lastName) {
     // console.log(firstName + lastName)
-    if(!lastName || typeof lastName === "boolean"){
+    if (!lastName || typeof lastName === "boolean") {
         console.log(firstName)
-    }else{
+    } else {
         console.log(firstName + lastName)
     }
 }
@@ -77,7 +77,7 @@ let anonymousFun = function () {
 
 // anonymousFun()
 
-let namedFun = function myName () {
+let namedFun = function myName() {
     console.log("Hii this is Shanu!!")
 }
 // myName()
@@ -116,9 +116,9 @@ console.log(returnedData);
 
 //! Nested Function
 //? A function declared inside a function is known as Nested Function.
-function Parent(){
+function Parent() {
     console.log("I am Parent Function")
-    function Child () {
+    function Child() {
         console.log("I am Child Function")
     }
     Child()
@@ -128,11 +128,55 @@ Parent()
 //! Function Currying
 //? Function currying in JavaScript is a functional programming technique where a function that takes multiple arguments is transformed into a sequence of nested functions, each taking a single argument at a time.
 //? Function currying is a technique by which we can call a nested returned function using one extra parentheses.
-function firstFun () {
+function firstFun() {
     console.log("I am first function")
-    function secondFun () {
+    function secondFun() {
         console.log("I am second Function")
     }
     return secondFun
 }
-firstFun()
+firstFun()()
+
+//! Higher Order Function and Callback Function
+//? A function which accepts another function as an argument is known as Higher Order Function (HOF). It can return a new function also.
+
+//? A function which is passed as an argument is known as callback function.
+
+function result(a) {
+    console.log(a)
+    a(100, 50)
+}
+
+function sum (firstnum, secnum) {
+    console.log(firstnum + secnum, " from Higher Order Function")
+}
+result(sum)
+
+function hof (a) {
+    console.log("I am an Higher Order Function")
+    a(90)
+}
+hof(function () {
+    console.log("I am a callback Function")
+})
+
+hof(()=>console.log("I am a callback function using arrow function"))
+hof(_=>console.log("I am a callback function using arrow function2.0"))
+hof(a=>{
+    console.log(a)
+})
+
+//? Write a function to count how many vowels are present inside a string
+let str = "Shanu"
+
+function countVowel (str) {
+    let count = 0
+    for(let i = 0; i<str.length; i++){
+        if(str[i] == "a"||str[i] == "e"||str[i] == "i"||str[i] == "o"||str[i] == "u"){
+            count++
+        }
+    }
+    console.log(count)
+}
+
+countVowel("education")
