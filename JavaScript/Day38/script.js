@@ -205,3 +205,69 @@ console.log(res)
 
 res = cskPlayer.substr(-5, false)
 console.log(res)
+
+//! split 
+//? Split is a string method generally used to convert the string value into an array it can accept one argument as a separator. If we are not passing any argument it will convert the entire string as a single value into an array. if we are passing empty string then it will be converting the entire alphabet as a separate index in an array. if we are passing space as an argument then it will convert each word having index in an array.
+let country = "India is my country"
+res = country.split()
+console.log(res)
+res = country.split("")
+console.log(res)
+res = country.split(" ")
+console.log(res)
+
+//! startsWith
+//? startsWith is a string method and it is used to check sequence of character whether it is starting with the same provided argument or not if yes then it will return true else false.
+res = country.startsWith("india")
+console.log(res)
+
+//! toLocaleLowerCase and toLocaleUpperCase
+//? toLocaleLowerCase and toLocaleUpperCase both are used to change the cases of characters either in Upper case or Lower case.
+res = country.toLocaleLowerCase()
+console.log(res)
+res = country.toLocaleUpperCase()
+console.log(res)
+
+res = country.toLowerCase()
+console.log(res)
+res = country.toUpperCase()
+console.log(res)
+
+//! toString
+//? toString is a string method and used to convert the values into string if it is null or undefined then it can't get converted into string because it does not have any toString method. Here we have some datatypes which can support toString as follows
+
+//? Array
+//? Function (anything whose typeof returns "function")
+//? Error
+//? Boolean
+//? Number
+//? String
+//? Date
+//? RegExp
+let salary = true
+console.log(typeof salary)
+
+let data = salary.toString()
+console.log(data)
+
+//! trim, trimEnd, trimStart
+//? All the above methods used to remove white spaces in the string trim can remove the whitespaces from both starting and ending of the string value. trimStart can remove the white spaces from starting and trimEnd can remove the white spaces from ending of the string value. All these values does not accept any argument.
+let username = "              Shanu                   "
+console.log(username)
+console.log(username.trimEnd())
+console.log(username.trimStart())
+console.log(username.trim())
+
+
+//! valueOf on Hold
+
+// let val = "Chennai Super King"
+// res = val.valueOf(1)
+// console.log(res)
+
+let contact = "1234567890"
+res = contact.slice(0,3).padEnd(10, "X")
+console.log(res)
+
+res = contact.slice(7).padStart(10, "X")
+console.log(res)
